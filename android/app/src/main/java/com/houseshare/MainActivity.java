@@ -1,4 +1,6 @@
 package com.houseshare;
+import android.content.Intent;
+import com.someone.sendsms.SendSMSPackage;
 
 import android.os.Bundle;
 
@@ -18,7 +20,11 @@ public class MainActivity extends ReactActivity {
     // Below line is handled by '@expo/configure-splash-screen' command and it's discouraged to modify it manually
     SplashScreen.show(this, SplashScreenImageResizeMode.CONTAIN, ReactRootView.class, false);
   }
-
+    // public void onActivityResult(int requestCode, int resultCode, Intent data) {
+    //     super.onActivityResult(requestCode, resultCode, data);
+    //     //probably some other stuff here
+    //     SendSMSPackage.getInstance().onActivityResult(requestCode, resultCode, data);
+    // }
 
     /**
      * Returns the name of the main component registered from JavaScript.

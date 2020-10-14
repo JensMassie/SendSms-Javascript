@@ -3,6 +3,8 @@ package com.houseshare;
 import android.app.Application;
 import android.content.Context;
 import android.net.Uri;
+//import com.tkporter.sendsms.SendSMSPackage;
+import com.someone.sendsms.SendSMSPackage; // <--- add here! 
 
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
@@ -43,6 +45,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       List<ReactPackage> packages = new PackageList(this).getPackages();
       packages.add(new ModuleRegistryAdapter(mModuleRegistryProvider));
+      //SendSMSPackage.getInstance();
+      new SendSMSPackage(); 
+
       return packages;
     }
 
